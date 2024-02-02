@@ -1,7 +1,51 @@
 body {
   padding: 10px;
+  background-color: #f4f4f4; /* Example background color */
+  font-family: Arial, sans-serif; /* Default font */
 }
 
-input {
-  margin: 5px;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff; /* Background color for the form */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners for the form */
+  max-width: 600px; /* Maximum width of the form */
+  margin: 20px auto; /* Centering the form */
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  width: 100%; /* Full width of the container */
+  padding: 10px;
+  margin-bottom: 15px; /* Space between fields */
+  border: 1px solid #ddd; /* Border color */
+  border-radius: 4px; /* Rounded borders for the input fields */
+}
+
+button[type="submit"],
+button[type="reset"] {
+  padding: 10px 20px;
+  border: none;
+  background-color: #5c87b2; /* Example button color */
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
 }
